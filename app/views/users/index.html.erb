@@ -1,0 +1,25 @@
+
+<table>
+      <tr>
+       <h3>Create Room<h3>
+        <%= turbo_stream_from 'rooms' %>
+        <%= render 'layouts/new_room_form' %>
+      </tr>
+      </table>  
+    <div>
+        <h4> Rooms </h4>
+        <%= turbo_stream_from 'rooms' %>
+        
+        <div id='rooms'>
+            <%= render @rooms %></br>
+        </div>
+      <div id="chatroom_container">  
+     <div id="side_panel" >  
+      
+
+
+     <footer class="w3-center w3-light-grey w3-padding-32">
+     <ul class="list-group">
+     <li class="list-group-item active" aria-current="true">Thank You To All</li>    
+     </footer>
+  </div>
